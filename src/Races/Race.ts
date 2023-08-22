@@ -2,6 +2,8 @@ abstract class Race {
   constructor(
     private readonly _name: string, 
     private readonly _dexterity: number,
+    protected createdRacesInstances: number = 0,
+
   ) {}
 
   static createdRacesInstances():number {
