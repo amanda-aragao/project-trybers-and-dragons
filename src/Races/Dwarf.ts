@@ -5,11 +5,11 @@ class Dwarf extends Race {
   private static count = 0;
   constructor(name: string, dexterity: number) {
     super(name, dexterity, Dwarf.createdRacesInstances());
-    this._maxLifePoints = 10;
+    this._maxLifePoints = 80;
     Dwarf.count += 1;
   }
 
-  static getCreatedRacesInstances(): number {
+  static createdRacesInstances(): number {
     return this.count;
   }
 
@@ -17,4 +17,5 @@ class Dwarf extends Race {
     return this._maxLifePoints;
   }
 }
+
 export default Dwarf;
