@@ -10,7 +10,7 @@ class Orc extends Race {
   }
 
   static createdRacesInstances(): number {
-    return this.count;
+    return Orc.count;
   }
 
   get maxLifePoints(): number {

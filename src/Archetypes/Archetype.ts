@@ -7,7 +7,7 @@ abstract class Archetype {
     private _cost: number = 0,
   ) {}
 
-  static createdArchetypesInstances():number {
+  static createdArchetypeInstances():number {
     throw new Error('Not implemented');
   }
 
